@@ -1,0 +1,21 @@
+"use client"
+
+import * as React from "react"
+import { ThemeProvider as NextThemesProvider } from "next-themes"
+
+// next-themes의 Props 타입을 직접 정의
+interface ThemeProviderProps {
+  children: React.ReactNode
+  attribute?: "class" | "data-theme" | "data-mode"
+  defaultTheme?: string
+  enableSystem?: boolean
+  disableTransitionOnChange?: boolean
+  storageKey?: string
+  themes?: string[]
+  forcedTheme?: string
+  enableColorScheme?: boolean
+}
+
+export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+}
