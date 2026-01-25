@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Bash(npx --version:*)",
+      "Bash(npm run build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm ls:*)",
+      "Bash(npm:*)",
+      "Bash(node --version:*)",
+      "Bash(test -d:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: 핵심 라이브러리 의존성 추가\n\n- zustand: 상태 관리\n- react-hook-form, zod, @hookform/resolvers: 폼 처리\n- next-themes: 다크모드\n- usehooks-ts: 유틸리티 훅\n- sonner: 토스트 알림\n- @radix-ui/react-*: shadcn/ui 기반 컴포넌트\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: shadcn/ui 기반 UI 컴포넌트 추가\n\n- Primitives: button, input, label, badge, separator, skeleton\n- Molecules: card, dialog, dropdown-menu, avatar, tooltip, sonner\n- Form: select, checkbox, switch, textarea\n- Layout: scroll-area, sheet, sidebar\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit:*)"
+    ]
+  }
+}
