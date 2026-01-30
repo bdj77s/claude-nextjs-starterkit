@@ -1,5 +1,21 @@
 {
   "permissions": {
-    "allow": ["Bash", "mcp__playwright"]
+    "allow": [
+      "Bash",
+      "mcp__playwright"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python .claude/hooks/log-prompt.py"
+          }
+        ]
+      }
+    ]
   }
 }
