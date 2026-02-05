@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash",
-      "mcp__playwright"
+      "mcp__playwright",
+      "WebSearch",
+      "WebFetch(domain:openapi.ls-sec.co.kr)",
+      "WebFetch(domain:github.com)",
+      "mcp__sequential-thinking__sequentialthinking"
     ]
   },
   "hooks": {
